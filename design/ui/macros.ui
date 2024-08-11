@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Макросы</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>831</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="add_btn">
+       <property name="text">
+        <string>Добавить макрос</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QTableWidget" name="macros_table">
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>115</number>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Название макроса</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Сочетание клавиш</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Имя файла</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Работоспособность</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Адрес файла</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="del_btn">
+         <property name="text">
+          <string>Активитовать/деактевировать выбранный(е) макрос(ы)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="change_btn">
+         <property name="text">
+          <string>Подтвердить изменения макроса(ов)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="0">
+      <widget class="QCheckBox" name="tray_cb">
+       <property name="text">
+        <string>Сворачивать в трей при закрытии</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>850</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
